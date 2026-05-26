@@ -396,97 +396,59 @@ img {
 
 /* ================= PROJECT SECTION ================= */
 
-.project,
 .projects {
-    padding: clamp(90px, 12vw, 120px) 10%;
-    background: #9d9999;
-    min-height: 100vh;
+    padding: 80px 10%;
+    background: #081b29;
+    color: white;
+}
+
+.main-text {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .main-text h2 {
-    text-align: center;
-    margin-bottom: clamp(40px, 8vw, 70px);
-    color: #081b29;
+    font-size: 45px;
 }
 
-.main-text h2 span {
-    color: rgb(236, 236, 236);
+.main-text span {
+    color: #0ef;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-top: 10px;
 }
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .row {
-    position: relative;
-    overflow: hidden;
-    min-height: 280px;
-    border-radius: 16px;
-    cursor: pointer;
-    background: #fff;
-    box-shadow: 0 14px 35px rgba(8, 27, 41, 0.14);
+    background: #112e42;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+    border: 1px solid transparent;
 }
 
-.row img {
-    width: 100%;
-    height: 100%;
-    min-height: 280px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.5s;
-}
-
-.layer {
-    width: 100%;
-    min-height: 100%;
-    padding: clamp(24px, 5vw, 36px);
-    background: linear-gradient(rgba(255, 255, 255, 0.96), rgba(0, 238, 255, 0.88));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 12px;
-    transition: height 0.5s;
+.row:hover {
+    transform: translateY(-8px);
+    border: 1px solid #0ef;
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.3);
 }
 
 .layer h5 {
-    color: #081b29;
-    font-size: clamp(22px, 3vw, 25px);
-    font-weight: 600;
+    color: #0ef;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .layer p {
-    color: #081b29;
-    font-size: 16px;
+    color: #d6d6d6;
     line-height: 1.6;
-}
-
-.layer a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    margin-top: 8px;
-    padding: 12px 16px;
-    color: #081b29;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 1.3;
-    background: #fff;
-    border-radius: 999px;
-    text-align: center;
-    overflow-wrap: anywhere;
-}
-
-.layer a i {
-    font-size: 16px;
-    font-style: normal;
-}
-
-.row:hover img {
-    transform: scale(1.1);
 }
 
 /* ================= CONTACT SECTION ================= */
